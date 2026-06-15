@@ -1,5 +1,5 @@
 import axios from "axios";
-
+// Function to fetch GitHub user data and repositories
 export const gitHubData = async (gitHubProfile)=>{
     try {
         const userResponse = await axios.get(`https://api.github.com/users/${gitHubProfile}`);
