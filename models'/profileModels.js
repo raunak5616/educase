@@ -7,19 +7,25 @@ export const save = async (profile) => {
     (
       username,
       followers,
+      following_count,
       public_repos,
       total_stars,
-      total_forks
+      total_forks,
+      most_used_language,
+      account_age
     )
-    VALUES (?, ?, ?, ?, ?)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?)
   `;
 
   await pool.execute(sql, [
     profile.username,
     profile.followers,
+    profile.followingCount,
     profile.publicRepos,
     profile.totalStars,
-    profile.totalForks
+    profile.totalForks,
+    profile.mostUsedLanguage,
+    profile.accountAge
   ]);
 };
 

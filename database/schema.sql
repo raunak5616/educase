@@ -1,0 +1,12 @@
+CREATE TABLE IF NOT EXISTS github_profiles (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(255) NOT NULL,
+  followers INT NOT NULL DEFAULT 0,
+  following_count INT NOT NULL DEFAULT 0,
+  public_repos INT NOT NULL DEFAULT 0,
+  total_stars INT NOT NULL DEFAULT 0,
+  total_forks INT NOT NULL DEFAULT 0,
+  most_used_language VARCHAR(100) NULL,
+  account_age INT NOT NULL DEFAULT 0,
+  analyzed_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
