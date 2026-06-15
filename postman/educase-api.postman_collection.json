@@ -12,9 +12,9 @@
         "method": "POST",
         "header": [],
         "url": {
-          "raw": "{{baseUrl}}/api/profiles/analyze/octocat",
+          "raw": "https://educase-81c2.onrender.com/api/profiles/analyze/:username",
           "host": [
-            "{{baseUrl}}"
+            "https://educase-81c2.onrender.com"
           ],
           "path": [
             "api",
@@ -31,9 +31,9 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "{{baseUrl}}/api/profiles",
+          "raw": "https://educase-81c2.onrender.com/api/profiles",
           "host": [
-            "{{baseUrl}}"
+            "https://educase-81c2.onrender.com"
           ],
           "path": [
             "api",
@@ -48,9 +48,9 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "{{baseUrl}}/api/profiles/octocat",
+          "raw": "https://educase-81c2.onrender.com/api/profiles/:username",
           "host": [
-            "{{baseUrl}}"
+            "https://educase-81c2.onrender.com"
           ],
           "path": [
             "api",
@@ -63,7 +63,7 @@
   ],
   "variable": [
     {
-      "key": "baseUrl",
+      "key": "https://educase-81c2.onrender.com",
       "value": "http://localhost:5000"
     }
   ]
